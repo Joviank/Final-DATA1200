@@ -36,10 +36,11 @@ button {
 .navButton {
    height: 100px;
    margin: auto 5% 0% auto;
+   filter: invert(1); /*inverted because the icons were initially white, but they look better in black */
    transition: 0.2s;
 }
 .navButton:hover {
-    border: 5px solid orange;
+    border: 5px solid black; /* border color is black in code but white on the website because the colors of navButton are inverted */
     border-radius: 100px;
  }
 
@@ -93,7 +94,6 @@ button{
     .navButton {
         display: inline;
         float: right;
-        filter: invert(1);
      }
 }
 
