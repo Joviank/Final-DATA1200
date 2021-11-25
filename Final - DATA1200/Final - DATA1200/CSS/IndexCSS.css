@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+header{
+    height: 120px;
+    padding: 10px 0 0 30px;
+    background-color: rgb(255, 208, 0);
+    width: 100%;
+    justify-content: space-between; 
+}
+
+button {
+    border-radius: 100px;
+    background-color: rgb(255, 208, 0);
+    height: 75px;
+    width: 75px;
+    transition: 1s;
+    float: right;
+    display: inline;
+}
+
+button:hover {
+    border-radius: 100px;
+    background-color: rgb(205, 208, 50);
+    height: 75px;
+    width: 75px;
+}
+
+.navButton{
+   height: 100px;
+   margin: auto 5% 0% auto;
+}
+
+#hamburgerMenu {
+    color: rgb(255, 208, 0);
+    font-size: 40px;
+}
+
+@media screen and (min-width: 767px){
+    .Photoslide-item-text{
+        max-width: 70%;
+        padding: 5rem 1rem;
+    }
+    .Photoslide-item-text h5{
+        font-size: 40px;
+    }
+    
+    #omLogo { 
+        height: 100px;
+    }
+
+    #hamburgerMenu a, li {
+        display: none;
+    }
+
+    #hamburgerButton {
+        display: none;
+    }
+    .navButton{
+        display: inline;
+        float: right;
+        filter: invert(1);
+     }
+}
+
+@media screen and (max-width: 767px){
+    .Photoslide-item-text{
+        max-width: 100%;
+        padding: 2rem;
+        padding-bottom: 100px;
+        top: inherit;
+        bottom: 0;
+        transform:initial;
+
+    }
+    .Photoslide-item-text h5{
+        font-size: 30px;
+    }
+
+    .Photoslide-item-text p{
+        font-size: 12px;
+    }
+    #omLogo {
+        height: 70px;
+         }
+    header{
+        height: 90px;
+        padding: 5px 0 0 30px;
+   }
+
+     #hamburgerMenu {
+        display: none;
+    }  
+
+     #hamburgerButton img {
+        display: inline;
+        height: 50px;
+     }
+
+   .navButton{
+       display: none;
+    }
+}
+
+/* Photoslide rules, used for the background images */
+.Photoslide{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.Photoslide-item{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    animation: cycleImages 61s infinite;
+}
+
+.Photoslide-item:nth-child(1){
+    animation-delay: 0s;
+}
+
+.Photoslide-item:nth-child(2){
+    animation-delay: 10s;
+}
+
+.Photoslide-item:nth-child(3){
+    animation-delay: 20s;
+}
+
+.Photoslide-item:nth-child(4){
+    animation-delay: 30s;
+}
+
+.Photoslide-item:nth-child(5){
+    animation-delay: 40s;
+}
+
+.Photoslide-item:nth-child(6){
+    animation-delay: 50s;
+}
+.Photoslide-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Photoslide-item-text{
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-40%);
+    background-color: rgba(0,0,0,.8);
+    color:white;
+    padding: 7rem 5rem;
+}
+
+.Photoslide-item-text h5{
+font-size: 50px;
+text-transform: uppercase;
+letter-spacing: 3px;
+margin-bottom: 20px;
+}
+
+.Photoslide-item-text p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+@keyframes cycleImages{
+    12%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+}
