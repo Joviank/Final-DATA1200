@@ -95,6 +95,16 @@ main p{
     font-size: 1.7rem;
 }
 
+.sources p{
+    padding-bottom: 0;
+    
+}
+.sources a{
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 1.5rem;
+}
+
 main img{
     width: 70%;
     display: block;
@@ -124,6 +134,7 @@ main img{
 }
 
 @media screen and (max-width: 767px) { 
+
     #omLogo {
         height: 70px;
     }
@@ -149,4 +160,10 @@ main img{
     main h1, h2, p{
         text-align: center;
     }
+
+    .sources a{
+        text-align: center;
+        display:block;
+    }
+
 }
