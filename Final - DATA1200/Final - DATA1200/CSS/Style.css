@@ -39,7 +39,7 @@ button {
    transition: 0.2s;
 }
 .navButton:hover {
-    border: 5px solid black; /* border color is black in code but white on the website because the colors of navButton are inverted */
+    border: 5px solid rgb(255, 255, 255); /* border color is black in code but white on the website because the colors of navButton are inverted */
     border-radius: 100px;
  }
 
