@@ -13,7 +13,7 @@ body, html{
 }
 
 body{
-    background-color: black;
+    background-color: rgb(184, 66, 66);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -148,3 +148,4 @@ margin-bottom: 20px;
         height: 15%;
     }    
 }
+
