@@ -33,17 +33,16 @@ button {
     display: inline;
 }
 
-button:hover {
-    border-radius: 100px;
-    background-color: rgb(205, 208, 50);
-    height: 75px;
-    width: 75px;
-}
-
 .navButton {
    height: 100px;
    margin: auto 5% 0% auto;
+   transition: 0.2s;
 }
+.navButton:hover {
+    border: 5px solid orange;
+    border-radius: 100px;
+ }
+
 
 button{
     border: none;
