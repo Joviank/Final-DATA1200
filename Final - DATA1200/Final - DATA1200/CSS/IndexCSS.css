@@ -113,7 +113,6 @@ button{
 }
 
 .Photoslide-item-text {
-    max-width: 50%;
     position: absolute;
     top: 50%;
     left: 0;
@@ -146,11 +145,8 @@ margin-bottom: 20px;
 }
 
 @media screen and (min-width: 767px) {
-    html {
-        overflow-y: hidden;
-    }
     .Photoslide-item-text{
-        max-width: 70%;
+        max-width: 50%;
         padding: 5rem 1rem;
     }
     .Photoslide-item-text h5{
