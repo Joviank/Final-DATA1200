@@ -7,14 +7,11 @@
 html {
     font-size: 10px;
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 body {
     background-color: black;
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 header {
@@ -24,6 +21,7 @@ header {
     width: 100%;
     justify-content: space-between; 
 }
+
 
 button {
     border-radius: 100px;
@@ -47,12 +45,33 @@ button:hover {
    margin: auto 5% 0% auto;
 }
 
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin:0;
+    padding: 0;
+}
+
 #hamburgerMenu {
+    font-size: 25px;
+}
+#hamburgerMenu ul a{
+    justify-content: center;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
     color: rgb(255, 208, 0);
-    font-size: 40px;
+}
+#hamburgerMenu ul a:hover{
+    color:white;
+    animation-delay: 3s;
 }
 
 @media screen and (min-width: 767px) {
+    html {
+        overflow-y: hidden;
+    }
     .Photoslide-item-text{
         max-width: 70%;
         padding: 5rem 1rem;
@@ -64,7 +83,7 @@ button:hover {
     #omLogo { 
         height: 100px;
     }
-
+    
     #hamburgerMenu a, li {
         display: none;
     }
