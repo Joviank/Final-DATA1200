@@ -104,8 +104,6 @@ main p{
     
 }
 .sources a{
-    padding-left: 15%;
-    padding-right: 15%;
     font-size: 1.5rem;
 }
 
@@ -135,9 +133,15 @@ main img{
         display: inline;
         float: right;
      }
+     .sources a{
+        padding-left: 15%;
+     }
 }
 
 @media screen and (max-width: 767px) { 
+    html{
+        overflow-x: hidden;
+    }
 
     #omLogo {
         height: 70px;
