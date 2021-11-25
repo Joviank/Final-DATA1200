@@ -72,11 +72,11 @@ main{
     background: white;
 }
 
-main h1, h2, p{
+main h1, h2, h3, p{
     padding-left: 15%;
     padding-right: 15%;
 }
-main h1, h2{
+main h1, h2, h3{
     text-transform: uppercase;
     letter-spacing: 2px;    
 }
@@ -88,6 +88,10 @@ main h1{
 
 main h2{
     font-size: 3rem;
+}
+
+main h3{
+    font-size: 2rem;
 }
 
 main p{
@@ -103,6 +107,10 @@ main p{
     padding-left: 15%;
     padding-right: 15%;
     font-size: 1.5rem;
+}
+
+.sources h2{
+    padding-top: -10%;
 }
 
 main img{
@@ -157,7 +165,7 @@ main img{
        display: none;
     }
 
-    main h1, h2, p{
+    main h1, h2, h3, p{
         text-align: center;
     }
 
