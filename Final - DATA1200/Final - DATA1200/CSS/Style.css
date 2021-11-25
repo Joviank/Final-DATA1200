@@ -136,4 +136,8 @@ main p{
    .navButton {
        display: none;
     }
+
+    main h1, h2, p{
+        text-align: center;
+    }
 }
