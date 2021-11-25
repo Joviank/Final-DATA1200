@@ -5,36 +5,47 @@
 <meta charset="utf-8">
 <title>OsloMet - Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="../CSS/styleOslo.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/Style.css">
     <!-- font from google start !-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <!-- font from google end !-->
 </head>
+<script type="text/javascript">
+    function hamburgerToggle() {
+        var menuOpen = false; //Boolean that switches when the menu is opened/closed
+        var hamburgerButton = document.getElementById("hamburgerButton");
+        var hamburgerMenu = document.getElementById("hamburgerMenu");
 
-<body> 
-    <div class="navBtn">
-        <a href="../../Final - DATA1200 (Task 5)/HTML/funPage.html"><img id="nav" src="../Pictures/Icons/Icon4.png"></a>
-        <a href="Topical.html"><img id="nav" src="../Pictures/Icons/Icon3.png"></a>
-        <a href="Accessibility.html"><img id="nav" src="../Pictures/Icons/Icon2.png"></a>
-        <a href="Reflection.html"><img id="nav" src="../Pictures/Icons/Icon1.png"></a>
-    </div>
+    if (hamburgerMenu.style.display == "inline") {
+        hamburgerMenu.style.display = "none";
+    } else {
+        hamburgerMenu.style.display = "inline";
+    }
+    
+}
+    </script>
     <header>
-        <div class="logo">
-            <a href="Index.html"><img id="OsloMetLogo" src="../Pictures/logo.png"></a>
-        </div>
-    </header>
-    <main>
-        <div class="Content">
-                <h5>Accessibility</h5>
-                <p>fitte3Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, 
-                        fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
-                        justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
-                </p>
-            </div>
-    </main>
+        <a href="funPage.html"><img class="navButton" src="../Pictures/Icons/Icon4.png"></a>
+        <a href="Topical.html"><img class="navButton" src="../Pictures/Icons/Icon3.png"></a>
+        <a href="Accessibility.html"><img class="navButton" src="../Pictures/Icons/Icon2.png"></a>
+        <a href="Reflection.html"><img class="navButton" src="../Pictures/Icons/Icon1.png"></a>
+        <a href="Index.html"><img id="omLogo" src="../Pictures/logo.png"></a>
+        <button onclick="hamburgerToggle()" id="hamburgerButton"><img class="navButton" src="../Pictures/Icons/hamburger.png"></a>
+</header>
+    <div id="hamburgerMenu">
+        <ul>
+            <a href="Reflection.html"><li>Reflection essay</li></a>
+            <a href="Accessibility.html"><li>Accessibility</li></a>
+            <a href="Topical.html"><li>Topical Information</li></a>
+            <a href="funPage.html"><li>Fun page</li></a>
+        </ul>
+    </div>
+<main>
+   <H1>DAMER - A</H1>
+    <P>Halla damer - Accessibility</P>
+</main>
+
 </body>
 </html>
