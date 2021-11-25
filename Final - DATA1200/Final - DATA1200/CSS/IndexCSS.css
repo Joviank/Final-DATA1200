@@ -34,8 +34,8 @@ button {
 }
 
 .navButton {
-   height: 100px;
-   margin: auto 5% 0% auto;
+   height: 70px;
+   margin: 15px 5% 0% auto;
    filter: invert(1); /*inverted because the icons were initially white, but they look better in black */
    transition: 0.2s;
 }

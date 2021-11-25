@@ -6,46 +6,141 @@
 
 html {
     font-size: 10px;
-}
-body, html {
     overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 body {
-    background-color: rgb(184, 66, 66);
+    background-color: black;
     font-family: 'Poppins', sans-serif;
 }
 
-.navBtn {
-    position: absolute;
-    flex-direction: column;
-    padding-right: 30px;
-    width: 100%;
-}
-
-.navBtn img {
-    float:right; 
-    padding: 4px;
-}
-
-.navBtn img:hover {
-    width: 70px;
-    margin: -10px 0px 20px 5px;
-    transition: 0.2s;
-}
-
 header {
+    height: 120px;
+    padding: 10px 0 0 30px;
     background-color: rgb(255, 208, 0);
     width: 100%;
     justify-content: space-between; 
 }
 
-header img {
-   padding-top: 0.5% ;
-   margin-left: 30px;    
+
+button {
+    border-radius: 100px;
+    background-color: rgb(255, 208, 0);
+    height: 75px;
+    width: 75px;
+    transition: 1s;
+    float: right;
+    display: inline;
 }
 
+.navButton {
+   height: 70px;
+   margin: 15px 5% 0% auto;
+   filter: invert(1); /*inverted because the icons were initially white, but they look better in black */
+   transition: 0.2s;
+}
+.navButton:hover {
+    border: 5px solid black; /* border color is black in code but white on the website because the colors of navButton are inverted */
+    border-radius: 100px;
+ }
+
+
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin:0;
+    padding: 0;
+}
+
+#hamburgerMenu {
+    font-size: 25px;
+}
+#hamburgerMenu ul a{
+    justify-content: center;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 208, 0);
+}
+#hamburgerMenu ul a:hover{
+    color:white;
+    animation-delay: 3s;
+}
+
+@media screen and (min-width: 767px) {
+    html {
+        overflow-y: hidden;
+    }
+    .Photoslide-item-text{
+        max-width: 70%;
+        padding: 5rem 1rem;
+    }
+    .Photoslide-item-text h5{
+        font-size: 40px;
+    }
+    
+    #omLogo { 
+        height: 100px;
+    }
+    
+    #hamburgerMenu a, li {
+        display: none;
+    }
+
+    #hamburgerButton {
+        display: none;
+    }
+    .navButton {
+        display: inline;
+        float: right;
+     }
+}
+
+@media screen and (max-width: 767px) { 
+
+    .Photoslide-item-text {
+        max-width: 100%;
+        padding: 2rem;
+        padding-bottom: 100px;
+        top: inherit;
+        bottom: 0;
+        transform:initial;
+
+    }
+
+    .Photoslide-item-text h5 {
+        font-size: 30px;
+    }
+
+    .Photoslide-item-text p {
+        font-size: 12px;
+    }
+
+    #omLogo {
+        height: 70px;
+    }
+
+    header {
+        height: 90px;
+        padding: 5px 0 0 30px;
+   }
+
+    #hamburgerMenu {
+        display: none;
+    }  
+
+    #hamburgerButton img {
+        display: inline;
+        height: 50px;
+     }
+
+   .navButton {
+       display: none;
+    }
+}
+
+/* Photoslide rules, used for the background images */
 .Photoslide {
     width: 100%;
     height: 100vh;
@@ -57,8 +152,33 @@ header img {
     width: inherit;
     height: inherit;
     position: absolute;
+    opacity: 0;
+    animation: cycleImages 61s infinite;
 }
 
+.Photoslide-item:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.Photoslide-item:nth-child(2) {
+    animation-delay: 10s;
+}
+
+.Photoslide-item:nth-child(3) {
+    animation-delay: 20s;
+}
+
+.Photoslide-item:nth-child(4) {
+    animation-delay: 30s;
+}
+
+.Photoslide-item:nth-child(5) {
+    animation-delay: 40s;
+}
+
+.Photoslide-item:nth-child(6) {
+    animation-delay: 50s;
+}
 .Photoslide-item img {
     width: 100%;
     height: 100%;
@@ -89,72 +209,11 @@ margin-bottom: 20px;
     font-weight: 100;
 }
 
-
-@media screen and (min-width: 766px) {
-
-    .Photoslide-item-text {
-        max-width: 70%;
-        padding: 5rem 1rem;
+@keyframes cycleImages {
+    12% {
+        opacity: 1;
     }
-
-    .Photoslide-item-text h5 {
-        font-size: 40px;
-    }
-
-    header img {
-        width: 7%;
-        height: 7%;
-    }
-
-    header {
-        height: 40%;
-    }
-
-   .navBtn {
-        padding-top: 7px;
-    }
-
-   .navBtn img {
-        width: 4%;
-        height: 4%;
+    20% {
+        opacity: 0;
     }
 }
-
-@media screen and (max-width: 767px) {
-    .Photoslide-item-text {
-        max-width: 100%;
-        padding: 2rem;
-        padding-bottom: 100px;
-        top: inherit;
-        bottom: 0;
-        transform:initial;
-    }
-
-    .Photoslide-item-text h5 {
-        font-size: 30px;
-    }
-
-    .Photoslide-item-text p {
-        font-size: 12px;
-    }
-
-    header img {
-        padding-top: 10px;
-        width: 100px;
-        height: 15%;
-    }
-
-    header {
-        height: 80px;
-    }
-
-    .navBtn {
-        padding-top: 20px;
-    }
-    
-    .navBtn img {
-        width: 40px;
-        height: 15%;
-    }    
-}
-
