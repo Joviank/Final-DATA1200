@@ -11,12 +11,18 @@ body {
 	background-color: black;
 	font-family: 'Poppins', sans-serif;
 }
+
+main {
+	padding-top: 120px;
+}
+
 header {
 	height: 120px;
 	padding: 10px 0 0 30px;
 	background-color: rgb(255, 208, 0);
 	width: 100%;
 	justify-content: space-between;
+	position: fixed;
 }
 
 main{
@@ -96,17 +102,23 @@ button{
 }
 #hamburgerMenu {
 	font-size: 1.7rem;
-}
+	}
+
 #hamburgerMenu ul a{
 	justify-content: center;
 	padding: 3px;
 	text-align: center;
 	text-decoration: none;
 	color: rgb(255, 208, 0);
+	transition: 0.5s;	
 }
+
+.offset {
+	padding-top: 120px;
+}
+
 #hamburgerMenu ul a:hover{
 	color: white;
-	animation-delay: 3s;
 }
 
 .text{
@@ -137,7 +149,8 @@ main p{
 @media screen and (min-width: 767px) {
 	
 	#omLogo {
-		height: 100px;
+		height: 75px;
+		margin-top: 10px;
 	}
 	#hamburgerMenu a, li {
 		display: none;
@@ -169,8 +182,10 @@ main p{
 		font-size: 1.2rem;
 	}
 	#omLogo {
-		height: 70px;
+		height: 65px;
+		padding-top: 10px;
 	}
+
 	header {
 		height: 90px;
 		padding: 5px 0 0 30px;
