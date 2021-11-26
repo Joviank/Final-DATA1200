@@ -50,7 +50,46 @@
     </div>
         <img alt="Computer showing WCAG 2.1" src="../Pictures/Access.png">
         <h1>Accessibility</h1>
-        <p>teksten</p>
+        <p>Some of the preliminary changes we made before testing our websites include:
+            We added alt tags to important images (excluding some like the background images since those are just decorative).
+            We made sure all text, including menu items and the content itself, had a high contrast for readability. 
+            This means that all of the text on our pages has a dark background and a light font. This also somewhat
+            improves the side-effects of the background image animation.
+        </p>
+        <p>We use an animated background that cycles between images. It was initially somewhat distracting and
+            made it difficult to focus on the content on the page. We chose to slow it down a lot, which is a 
+            little less visually appealing but less distracting. The page hides the navigation icons and shows
+            a hamburger menu icon instead on narrow displays. This eliminates the need to hit tiny touch targets
+            (such as on a small phone screen) and is more visually pleasing. 
+        </p>
+
+        <p>After testing with several automated testing websites, we made the following changes:
+            Some minor errors in our code, such as the position of the script-tag
+            (which apparently should not be inside the body-tag. We initially did not add 
+            alt-text to the navigation icons, but they also need to be readable by screen readers. 
+        </p>
+
+        <p>The navigation icons are animated and the selected page is highlighted in white.
+        This is done to make navigation easier and so the user can easily identify the buttons.</p>
+
+        <p>We chose to not animate the OsloMet logo. We were unsure whether or not it was necessary to animate
+        the logo. However, we decided to keep the logo as it is, since both the oslomet.no and Canvas
+         websites use the logo as a button AND it isn’t animated at all.</p>
+         
+        <p>Some of the manual tests we did include 
+                testing with VoiceOver on an iPhone, 
+                navigating the website using only the keyboard
+                using a wide range of text sizes and screen sizes to test the functionality of the website. 
+                This gave us useful insight on how different people will navigate the website and the issues they could face.
+                Some of the changes we made include making more descriptive alt-text. 
+        </p>
+
+         <p>We chose to upload the website as a zipped file because some pictures are not free to use.
+            Some of the pictures in the fun page are copyrighted, as the assignment allowed for this.</p>  
+            
+        <p>We used the W3C CSS Validation Service (Legg til link her) to check our css code. It showed that
+        all of our css was correct and that there were no errors.The “fun page” was also approved and includes
+        a valid css code. </p>    
 </main>
 
 </body>
