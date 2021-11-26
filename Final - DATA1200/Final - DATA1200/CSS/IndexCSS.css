@@ -33,10 +33,10 @@ main{
 	background-size: cover;
 	background-position:center;
 	background-repeat: no-repeat;
-	transition: 5s;
+	transition: 3s;
 
 	animation-name:cbt;
-	animation-duration:60s ;
+	animation-duration:40s ;
 	animation-iteration-count:infinite;
 	animation-play-state:running;
 	animation-timing-function:ease-in-out;
@@ -151,9 +151,6 @@ main p{
 	}
 }
 @media screen and (max-width: 767px) {
-	html{
-		overflow-y: hidden;
-	}
 	.text {
 		max-width: 100%;
         padding: 2rem;
