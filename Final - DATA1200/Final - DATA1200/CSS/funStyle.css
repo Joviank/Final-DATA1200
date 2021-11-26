@@ -16,7 +16,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-@media screen and (max-width:850px) { 
+@media screen and (max-width:767px) { 
 
     .journey {
         width: 100%;
@@ -59,11 +59,11 @@ body {
     }
 
     .discover-content h2 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }  
 
     .discover-content p {
-       font-size: 0.8rem;
+       font-size: 1rem;
     }
 
     .row .col h2 {
@@ -83,7 +83,7 @@ body {
     }
 }
 
-@media screen and (min-width:849px){
+@media screen and (min-width:767px){
 
     .h-content h1 {
         font-size: 5.5rem;
@@ -108,15 +108,15 @@ body {
     }
 
     .discover-content {
-        margin-bottom: 150px;
+        margin-bottom: 70px;
     }
 
     .discover-content h2 {
-        font-size: 2.5rem;
+        font-size: 4rem;
     }  
     
     .discover-content p {
-       font-size: 1.7rem;
+       font-size: 1.3rem;
     }
 
     .row .col h2 {
@@ -270,4 +270,5 @@ footer {
 footer p {
     padding-top: 2vmin;
     color:seashell;
+    font-size: 1rem;
 }
