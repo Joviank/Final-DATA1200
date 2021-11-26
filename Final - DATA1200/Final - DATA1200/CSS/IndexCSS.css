@@ -77,16 +77,15 @@ button {
 	height: 70px;
 	margin: 15px 5% 0% auto;
 	transition: 0.2s;
-}
-.navButton:hover {
-	border: 5px solid white;
-	border-radius: 100px;
-}
-
-.navButtonSelected {
-	
-
-}
+ }
+ .navButton:hover {
+	 border: 5px solid white;
+	 border-radius: 100px;
+  }
+ 
+  .navButtonSelected {
+	 filter: invert(1);
+ }
 
 button{
 	border: none;
