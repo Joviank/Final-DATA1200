@@ -82,6 +82,12 @@ button {
 	border: 5px solid white;
 	border-radius: 100px;
 }
+
+.navButtonSelected {
+	
+
+}
+
 button{
 	border: none;
 	background: none;
