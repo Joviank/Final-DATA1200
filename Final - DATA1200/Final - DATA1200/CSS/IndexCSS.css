@@ -40,12 +40,7 @@ main{
 	background-position:center;
 	background-repeat: no-repeat;
 	transition: 3s;
-
-	animation-name:cbt;
-	animation-duration:40s ;
-	animation-iteration-count:infinite;
-	animation-play-state:running;
-	animation-timing-function:ease-in-out;
+	animation: cbt 40s ease-in-out infinite;
 }
 
 @keyframes cbt{
