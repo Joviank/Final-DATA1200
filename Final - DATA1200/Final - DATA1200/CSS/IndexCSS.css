@@ -96,7 +96,7 @@ button{
 	padding: 0;
 }
 #hamburgerMenu {
-	font-size: 21px;
+	font-size: 1.7rem;
 }
 #hamburgerMenu ul a{
 	justify-content: center;
@@ -136,6 +136,7 @@ main p{
 }
 
 @media screen and (min-width: 767px) {
+	
 	#omLogo {
 		height: 100px;
 	}
@@ -151,6 +152,9 @@ main p{
 	}
 }
 @media screen and (max-width: 767px) {
+	html{
+		overflow-y:hidden;
+	}
 	.text {
 		max-width: 100%;
         padding: 2rem;
