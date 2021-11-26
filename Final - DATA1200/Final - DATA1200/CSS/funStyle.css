@@ -34,10 +34,6 @@ body {
         max-width: 90%;
     }
 
-    .navigation {
-        display: none;
-    }
-
     .h-content h1 {
         font-size: 3rem; 
     }
