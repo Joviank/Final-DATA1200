@@ -11,41 +11,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 <!-- font from google end !-->
 </head>
-<body>
+
 <script type="text/javascript">
     function hamburgerToggle() {
         var menuOpen = false; //Boolean that switches when the menu is opened/closed
         var hamburgerButton = document.getElementById("hamburgerButton");
         var hamburgerMenu = document.getElementById("hamburgerMenu");
+        var header = document.getElementById("header");
 
     if (hamburgerMenu.style.display == "inline") {
         hamburgerMenu.style.display = "none";
+        header.style.position = "fixed";
+
     } else {
         hamburgerMenu.style.display = "inline";
+        header.style.position = "relative";
     }
     
 }
 </script>
-    <header>
+    
+<body>   
+    <header id="header">
         <a href="funPage.html"><img class="navButton" src="../Pictures/Icons/Icon4.png"></a>
         <a href="Topical.html"><img class="navButton" src="../Pictures/Icons/Icon3.png"></a>
         <a href="Accessibility.html"><img class="navButton" src="../Pictures/Icons/Icon2.png"></a>
         <a href="Reflection.html"><img class="navButton navButtonSelected" src="../Pictures/Icons/Icon1.png"></a>
         <a href="Index.html"><img id="omLogo" src="../Pictures/logo.png"></a>
-        <button onclick="hamburgerToggle()" id="hamburgerButton"><img class="navButton" src="../Pictures/Icons/hamburger.png"></a>
+            <button onclick="hamburgerToggle()" id="hamburgerButton"><img class="navButton" src="../Pictures/Icons/hamburger.png"></a>
 </header>
-    <div id="hamburgerMenu">
-        <ul>
-            <a href="Reflection.html"><li>Reflection essay</li></a>
-            <a href="Accessibility.html"><li>Accessibility</li></a>
-            <a href="Topical.html"><li>Topical Information</li></a>
-            <a href="funPage.html"><li>Fun page</li></a>
-        </ul>
+
+<div id="hamburgerMenu">
+    <ul>
+        <a href="Reflection.html"><li>Reflection essay</li></a>
+        <a href="Accessibility.html"><li>Accessibility</li></a>
+        <a href="Topical.html"><li>Topical Information</li></a>
+        <a href="funPage.html"><li>Fun page</li></a>
+    </ul>
     </div>
 <main> 
     <img src="../Pictures/Reflection/Background.jpg" alt="Students walking up stairs">
    <h1>Being a student rather than a pupil</h1>
-    <P>Being a student means that everything you know is completely different in every possible sense.
+    <p> Being a student means that everything you know is completely different in every possible sense.
         Everything, almost everything, depends only on you. So, the responsibility for your learning 
         lay in your hands. And the past few years because of coronavirus and lockdowns  the lectures 
         and attendance have been on zoom to decrease the infection of coronavirus. 
@@ -58,7 +65,7 @@
         no such thing when it comes to university. Especially for those of us who are students of information 
         technology. I can honestly say that courses are not forty percent of what is expected of a student in the exam!
         The level of supervision needed by students is generally lower than pupils as they are older and considered
-        capable of managing themselves without someone else intervening.</P>
+        capable of managing themselves without someone else intervening.</p>
 
         <h2>Teamwork</h2>
         <img src="../Pictures/Reflection/Teamwork.jpg" alt="Five people fist-bumping over a desk with laptops">

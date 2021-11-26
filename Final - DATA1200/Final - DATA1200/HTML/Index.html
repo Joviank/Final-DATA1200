@@ -11,23 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 <!-- font from google end !-->
 </head>
+
 <script type="text/javascript">
     function hamburgerToggle() {
         var menuOpen = false; //Boolean that switches when the menu is opened/closed
         var hamburgerButton = document.getElementById("hamburgerButton");
         var hamburgerMenu = document.getElementById("hamburgerMenu");
+        var header = document.getElementById("header");
 
     if (hamburgerMenu.style.display == "inline") {
         hamburgerMenu.style.display = "none";
+        header.style.position = "fixed";
+
     } else {
         hamburgerMenu.style.display = "inline";
+        header.style.position = "relative";
     }
     
 }
 </script>
 
 <body>   
-    <header>
+    <header id="header">
             <a href="funPage.html"><img class="navButton" src="../Pictures/Icons/Icon4.png"></a>
             <a href="Topical.html"><img class="navButton" src="../Pictures/Icons/Icon3.png"></a>
             <a href="Accessibility.html"><img class="navButton" src="../Pictures/Icons/Icon2.png"></a>
