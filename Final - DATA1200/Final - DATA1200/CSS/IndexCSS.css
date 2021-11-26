@@ -104,7 +104,6 @@ button{
 	animation-delay: 3s;
 }
 
-
 .text{
 	max-width: 50%;
     position: absolute;
@@ -130,22 +129,7 @@ main p{
 	font-weight: 100;
 }
 
-@keyframes cycleImages {
-	12% {
-		opacity: 1;
-	}
-	20% {
-		opacity: 0;
-	}
-}
 @media screen and (min-width: 767px) {
-	.Photoslide-item-text{
-		max-width: 50%;
-		padding: 5rem 1rem;
-	}
-	.Photoslide-item-text h5{
-		font-size: 6rem;
-	}
 	#omLogo {
 		height: 100px;
 	}
@@ -161,10 +145,13 @@ main p{
 	}
 }
 @media screen and (max-width: 767px) {
+	html{
+		overflow-y: hidden;
+	}
 	.text {
 		max-width: 100%;
         padding: 2rem;
-        padding-bottom: 100px;
+        padding-bottom: 80px;
         top: inherit;
         bottom: 0;
         transform:initial;
