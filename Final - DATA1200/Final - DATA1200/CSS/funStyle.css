@@ -35,7 +35,7 @@ body {
     }
 
     .navigation {
-        display: none;
+        align-items: center;
     }
 
     .h-content h1 {
