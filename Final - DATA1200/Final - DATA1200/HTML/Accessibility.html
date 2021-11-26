@@ -11,46 +11,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <!-- font from google end !-->
-</head>
-<script type="text/javascript">
-    function hamburgerToggle() {
-        var menuOpen = false; //Boolean that switches when the menu is opened/closed
-        var hamburgerButton = document.getElementById("hamburgerButton");
-        var hamburgerMenu = document.getElementById("hamburgerMenu");
-        var header = document.getElementById("header");
-
-    if (hamburgerMenu.style.display == "inline") {
-        hamburgerMenu.style.display = "none";
-        header.style.position = "fixed";
-
-    } else {
-        hamburgerMenu.style.display = "inline";
-        header.style.position = "relative";
-    }
+    <script>
+        function hamburgerToggle() {
+            var menuOpen = false; //Boolean that switches when the menu is opened/closed
+            var hamburgerButton = document.getElementById("hamburgerButton");
+            var hamburgerMenu = document.getElementById("hamburgerMenu");
+            var header = document.getElementById("header");
     
-}
-</script>
-
+        if (hamburgerMenu.style.display == "inline") {
+            hamburgerMenu.style.display = "none";
+            header.style.position = "fixed";
+    
+        } else {
+            hamburgerMenu.style.display = "inline";
+            header.style.position = "relative";
+        }
+        
+    }
+    </script>
+</head>
 <body>   
     <header id="header">
-        <a href="funPage.html"><img class="navButton" src="../Pictures/Icons/Icon4.png"></a>
-        <a href="Topical.html"><img class="navButton" src="../Pictures/Icons/Icon3.png"></a>
-        <a href="Accessibility.html"><img class="navButton navButtonSelected" src="../Pictures/Icons/Icon2.png"></a>
-        <a href="Reflection.html"><img class="navButton" src="../Pictures/Icons/Icon1.png"></a>
-        <a href="Index.html"><img id="omLogo" src="../Pictures/logo.png"></a>
-        <button onclick="hamburgerToggle()" id="hamburgerButton"><img class="navButton" src="../Pictures/Icons/hamburger.png"></a>
-</header>
+            <a href="funPage.html"><img class="navButton" alt="Fun Page" src="../Pictures/Icons/Icon4.png"></a>
+            <a href="Topical.html"><img class="navButton" alt="Topical" src="../Pictures/Icons/Icon3.png"></a>
+            <a href="Accessibility.html"><img class="navButton" alt="Accessibility" src="../Pictures/Icons/Icon2.png"></a>
+            <a href="Reflection.html"><img class="navButton" alt="Reflection" src="../Pictures/Icons/Icon1.png"></a>
+            <a href="Index.html"><img id="omLogo" alt="home" src="../Pictures/logo.png"></a>
+            <button onclick="hamburgerToggle()" id="hamburgerButton"><img class="navButton" alt="menu" src="../Pictures/Icons/hamburger.png"></button>
+    </header>
+    <main>
     <div id="hamburgerMenu">
         <ul>
-            <a href="Reflection.html"><li>Reflection essay</li></a>
-            <a href="Accessibility.html"><li>Accessibility</li></a>
-            <a href="Topical.html"><li>Topical Information</li></a>
-            <a href="funPage.html"><li>Fun page</li></a>
+            <li><a href="Reflection.html">Reflection essay</a></li>
+            <li><a href="Accessibility.html">Accessibility</a></li>
+            <li><a href="Topical.html">Topical Information</a></li>
+            <li><a href="funPage.html">Fun page</a></li>
         </ul>
     </div>
-<main>
-   <H1>DAMER - A</H1>
-    <P>Halla damer - Accessibility</P>
+        <img src="../Pictures/Access.png">
+        <h1>Accessibility</h1>
+        <p>teksten</p>
 </main>
 
 </body>

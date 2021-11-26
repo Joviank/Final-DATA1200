@@ -95,18 +95,21 @@ button{
 	margin: 0;
 	padding: 0;
 }
-#hamburgerMenu {
-	font-size: 1.7rem;
-	}
 
-#hamburgerMenu ul a{
-	justify-content: center;
-	padding: 3px;
-	text-align: center;
-	text-decoration: none;
-	color: rgb(255, 208, 0);
-	transition: 0.5s;	
-}
+
+#hamburgerMenu ul, li{
+		justify-content: center;
+		text-align: center;
+		transition: 0.5s;
+		background-color: black;
+		padding: 15px;
+	}
+	
+#hamburgerMenu a{
+		text-decoration: none;
+		color: rgb(255, 208, 0);
+		font-size: 1.7rem;
+	}
 
 .offset {
 	padding-top: 120px;

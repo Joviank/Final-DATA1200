@@ -12,9 +12,6 @@ body {
     background-color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
 }
-main {
-	padding-top: 120px;
-}
 
 header {
     height: 120px;
@@ -58,15 +55,18 @@ button{
     padding: 0;
 }
 
-#hamburgerMenu {
-    font-size: 1.7rem;
+#hamburgerMenu ul, li{
+	justify-content: center;
+	text-align: center;
+	transition: 0.5s;
+    background-color: black;
+    padding: 15px;
 }
-#hamburgerMenu ul a{
-    justify-content: center;
-    padding: 3px;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(255, 208, 0);
+
+#hamburgerMenu a{
+	text-decoration: none;
+	color: rgb(255, 208, 0);
+    font-size: 1.7rem;
 }
 #hamburgerMenu ul a:hover{
     color:white;
@@ -114,6 +114,7 @@ main p{
 }
 
 main img{
+    padding-top: 90px;
     width: 70%;
     display: block;
     margin-left: auto;
